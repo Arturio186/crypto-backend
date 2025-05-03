@@ -2,6 +2,7 @@ const express = require('express');
 const cron = require('node-cron');
 const cors = require('cors');
 const https = require('https');
+const fs = require('fs');
 
 const fetchRates = require('./services/rates/fetchRates');
 const getUsdtRate = require('./services/rates/getUsdtRate');

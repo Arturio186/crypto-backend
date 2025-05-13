@@ -12,6 +12,7 @@ module.exports = async (req, res) => {
 
     res.status(200).json({
       sell: rate.sell,
+      base: rate.base,
       buy: rate.buy,
       change: rate.change,
       lastUpdated: rate.fetchedAt

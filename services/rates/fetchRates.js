@@ -18,6 +18,7 @@ module.exports = async () => {
     await db('usdtRate')
       .insert({
         sell: (baseCost * 1.04).toFixed(2),
+        base: baseCost.toFixed(2),
         buy: (baseCost * 0.96).toFixed(2),
         change: usdtRate.change,
         fetchedAt: new Date(),
